@@ -260,7 +260,7 @@ const Products = (props) => {
                     <Col md={12}>
                         <div style={{ display: "flex", justifyContent: "space-between" }}>
                             <h3>Products</h3>
-                            <button onClick={handleShow}>Add</button>
+                            <button className="addbutton" onClick={handleShow}>Add</button>
                         </div>
                     </Col>
                 </Row>

@@ -6,7 +6,8 @@ export const getAllCategory = () => {
     return async dispatch => {
 
         dispatch({
-            type: categoryConstants.GET_ALL_CATERORIES_REQUEST
+            // type: categoryConstants.GET_ALL_CATERORIES_REQUEST
+            type: categoryConstants
         })
 
         const res = await axios.get(`category/getcategory`);
