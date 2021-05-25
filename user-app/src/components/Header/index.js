@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
-// import flipkartLogo from "../../images/logo/flipkart.png";
-// import goldenStar from "../../images/logo/golden-star.png";
+import aviralogo from "../../images/logo.png";
+import goldenStar from "../../images/golden-star.png";
 import { IoIosArrowDown, IoIosCart, IoIosSearch } from "react-icons/io";
 import {
   Modal,
@@ -208,15 +208,14 @@ const Header = (props) => {
         </div>
       </Modal>
       <div className="subHeader">
-        {/* Logo  */}
         <div className="logo">
           <a href="">
-            {/* <img src={flipkartLogo} className="logoimage" alt="" /> */}
+            <img src={aviralogo} className="logoimage" alt="" />
           </a>
           <a style={{ marginTop: "-10px" }}>
             <span className="exploreText">Explore</span>
-            <span className="plusText">Plus</span>
-            {/* <img src={goldenStar} className="goldenStar" alt="" /> */}
+            <span className="plusText">More</span>
+            <img src={goldenStar} className="goldenStar" alt="" />
           </a>
         </div>
         {/* logo ends here */}
