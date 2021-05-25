@@ -49,30 +49,35 @@ exports.getProductsBySlug = (req, res) => {
             return res.status(400).json({ error });
           }
 
-          if (category.type) {
+          // if (category.type) {
+          if (category) {
             if (products.length > 0) {
               res.status(200).json({
                 products,
-                priceRange: {
-                  under5k: 5000,
-                  under10k: 10000,
-                  under15k: 15000,
-                  under20k: 20000,
-                  under30k: 30000,
-                },
+                // priceRange: {
+                //   under200: 200,
+                //   under500: 500,
+                //   under1k: 1000,
+                //   under10k: 10000,
+                //   under30k: 30000,
+                // },
                 productsByPrice: {
-                  under5k: products.filter((product) => product.price <= 5000),
+                  under200: products.filter((product) => product.price <= 200),
+
+                  under500: products.filter(
+                    (product) => product.price > 200 && product.price <= 500
+                  ),
+
+                  under1k: products.filter(
+                    (product) => product.price > 500 && product.price <= 1000
+                  ),
+
                   under10k: products.filter(
-                    (product) => product.price > 5000 && product.price <= 10000
+                    (product) => product.price > 1000 && product.price <= 10000
                   ),
-                  under15k: products.filter(
-                    (product) => product.price > 10000 && product.price <= 15000
-                  ),
-                  under20k: products.filter(
-                    (product) => product.price > 15000 && product.price <= 20000
-                  ),
+
                   under30k: products.filter(
-                    (product) => product.price > 20000 && product.price <= 30000
+                    (product) => product.price > 10000 && product.price <= 30000
                   ),
                 },
               });

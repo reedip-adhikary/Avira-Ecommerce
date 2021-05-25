@@ -1,7 +1,7 @@
 import axios from "../helpers/axios";
 import { categoryConstansts } from "./constants";
 
-const getAllCategory = () => {
+export const getAllCategory = () => {
     return async dispatch => {
 
         dispatch({ type: categoryConstansts.GET_ALL_CATEGORIES_REQUEST });
