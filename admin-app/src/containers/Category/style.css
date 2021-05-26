@@ -16,11 +16,16 @@
 }
 
 .actionBtnContainer > button{
-    border: 0;
+    border: 2px solid rgb(25, 98, 206);
     margin: 0 5px;
-    font-size: 14px;
+    color: rgb(255, 255, 255);;
+    font-size: 18px;
 }
 
 .react-checkbox-tree {
     font-size: 20px;
+}
+
+.button {
+    background-color: rgba(176, 201, 255, 0.658);
 }
