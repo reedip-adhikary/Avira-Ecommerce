@@ -6,6 +6,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import linearCategories from '../../helpers/linearCategories';
 import { useSelector, useDispatch } from 'react-redux';
 import { createPage } from '../../actions';
+import "./style.css";
 
 /**
 * @author
@@ -196,7 +197,8 @@ const NewPage = (props) => {
                     :
                     <>
                         {renderCreatePageModal()}
-                        <button onClick={() => setCreateModal(true)}>Create Page</button>
+                        <button className="buttonposition" onClick={() => setCreateModal(true)}>Create Page</button>
+                        <p className="paraposition">Please check your page in 'Category' window!</p>
                     </>
             }
 

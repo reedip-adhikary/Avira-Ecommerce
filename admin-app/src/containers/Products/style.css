@@ -34,5 +34,15 @@ button:focus{
 
 .addbutton{
     height: 35px;
-    padding: 0 20px 0;
+    padding: 0 25px 0;
+}
+
+.tablewidth{
+    width: 130%;
+    margin-left: -15%;
+}
+
+.headingwidth{
+    width: 122.5%;
+    margin-left: -14%;
 }

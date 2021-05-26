@@ -93,7 +93,7 @@ const Products = (props) => {
 
     const renderProducts = () => {
         return (
-            <Table style={{ fontSize: 12 }} responsive="sm">
+            <Table className="tablewidth" style={{ fontSize: 16 }} responsive="sm">
                 <thead>
                     <tr>
                         <th>Name</th>
@@ -258,7 +258,7 @@ const Products = (props) => {
             <Container>
                 <Row>
                     <Col md={12}>
-                        <div style={{ display: "flex", justifyContent: "space-between" }}>
+                        <div className="headingwidth" style={{ display: "flex", justifyContent: "space-between" }}>
                             <h3>Products</h3>
                             <button className="addbutton" onClick={handleShow}>Add</button>
                         </div>
