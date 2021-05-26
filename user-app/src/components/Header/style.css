@@ -3,4 +3,6 @@
     height: 15rem;
     background-color: rgb(236, 29, 29);
     background-image: url("../../images/cover-home.png");
+    background-repeat: no-repeat;
+    background-position: right;
 }

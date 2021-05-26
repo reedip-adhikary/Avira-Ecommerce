@@ -16,7 +16,11 @@ const Home = (props) => {
 
       <Jumbotron style={{ margin: '5rem', background: '#fff' }} className="text-center">
         <h1>Welcome to Admin Dashboard</h1>
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a sear</p>
+        <p className="paras ppapa">Thank you fot using Avira Cottage and thanks to the Admins for taking care of the establishment.</p>
+        <p className="paras">Please Go to <a href="#"><NavLink to={`/category`}>Category</NavLink></a>
+        to create and edit category listd <a href="#"><NavLink to={`/products`}>Products</NavLink></a>
+         to Add or delete or to get product Info, <a href="#"><NavLink to={`/page`}>Page</NavLink></a>
+          to create Brand page for a category and <a href="#"><NavLink to={`/orders`}>Orders</NavLink></a> to check order details.</p>
       </Jumbotron>
     </Layout>
   )

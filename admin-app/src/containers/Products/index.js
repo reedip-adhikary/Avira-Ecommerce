@@ -100,7 +100,7 @@ const Products = (props) => {
                         <th>Price</th>
                         <th>Quantity</th>
                         <th>Category</th>
-                        <th>Actions</th>
+                        <th className="lesspadding">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
