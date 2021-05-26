@@ -2,14 +2,17 @@
     width: 90%;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 20px;
     border: 2px solid #4d000060;
-    padding: 20px;
+    padding: 10px;
     border-radius: 15px;
 }
 
 .cardHeader{
     display: flex;
     justify-content: space-between;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 .underline{
@@ -22,8 +25,8 @@
     margin: 0 10px;
 }
 .productContainer .productImgContainer{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 200px;
     overflow: hidden;
     text-align: center;
     margin: 10px auto;
