@@ -7,6 +7,8 @@ import { Carousel } from 'react-responsive-carousel';
 import Card from '../../../components/UI/Card';
 import { generatePublicUrl } from '../../../urlConfig';
 
+import config from "../../../config"
+
 /**
 * @author
 * @function ProductPage
@@ -52,8 +54,10 @@ const ProductPage = (props) => {
                 flexWrap: 'wrap',
                 margin: '10px 0'
             }}>
+
                 {
                     page.products && page.products.map((product, index) =>
+                    
                         <Card
                             key={index}
                             style={{
@@ -65,7 +69,7 @@ const ProductPage = (props) => {
                             <img style={{
                                 width: '100%',
                                 height: '100%'
-                            }} src={product.img} alt="" />
+                            }} src={`${config.BASE_URL}${product.img}`} alt="" />
                         </Card>
                     )
                 }
