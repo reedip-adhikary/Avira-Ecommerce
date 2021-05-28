@@ -41,9 +41,8 @@ const ProductPage = (props) => {
                         <a
                             key={index}
                             style={{ display: 'block' }}
-                            href={banner.navigateTo}
                         >
-                            <img src={banner.img} alt="" />
+                            <img src={`${config.BASE_URL}${banner.img}`} alt="" />
                         </a>
                     )
                 }
@@ -52,24 +51,16 @@ const ProductPage = (props) => {
                 display: 'flex',
                 justifyContent: 'center',
                 flexWrap: 'wrap',
-                margin: '10px 0'
             }}>
 
                 {
                     page.products && page.products.map((product, index) =>
-                    
+
                         <Card
                             key={index}
-                            style={{
-                                width: '400px',
-                                height: '200px',
-                                margin: '5px'
-                            }}
+
                         >
-                            <img style={{
-                                width: '100%',
-                                height: '100%'
-                            }} src={`${config.BASE_URL}${product.img}`} alt="" />
+                            <img src={`${config.BASE_URL}${product.img}`} alt="" />
                         </Card>
                     )
                 }
