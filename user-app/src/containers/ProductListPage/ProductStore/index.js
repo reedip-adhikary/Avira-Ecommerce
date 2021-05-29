@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import Card from "../../../components/UI/Card";
 // import { MaterialButton } from "../../../components/MaterialUI";
 // import Rating from "../../../components/UI/Rating";
@@ -45,7 +45,11 @@ const ProductStore = (props) => {
               <div style={{ display: 'flex' }}>
                 {
                   product.productsByPrice[key].map(product =>
-                    <div className="productContainer">
+                    <Link style={{
+                      display: "block"
+                    }}
+                      to={`/${product.slug}/${product._id}/p`}
+                      className="productContainer">
                       <div className="productImgContainer">
                         <img src={product.productPictures[0].img} alt="" />
                       </div>
@@ -53,11 +57,11 @@ const ProductStore = (props) => {
                         <div>{product.name}</div>
                         <div>
                           <span>4.3</span>
-                          <span>     549</span>
+                          <span> (547)</span>
                         </div>
                         <div className="productPrice">{product.price}</div>
                       </div>
-                    </div>)
+                    </Link>)
                 }
 
               </div>
