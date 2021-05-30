@@ -47,10 +47,12 @@ const ProductPage = (props) => {
                     )
                 }
             </Carousel>
-            <div style={{
+            <div className="pageitemwidth" style={{
                 display: 'flex',
                 justifyContent: 'center',
-                flexWrap: 'wrap',
+                width: "97%",
+                height: "550px",
+                margin: "auto"
             }}>
 
                 {
