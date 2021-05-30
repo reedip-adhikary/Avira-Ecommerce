@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-// import Card from "../../../components/UI/Card";
+import Card from "../../../components/UI/Card";
 // import { MaterialButton } from "../../../components/MaterialUI";
 // import Rating from "../../../components/UI/Rating";
 // import Price from "../../../components/UI/Price";
@@ -36,11 +36,10 @@ const ProductStore = (props) => {
       {
         Object.keys(product.productsByPrice).map((key, index) => {
           return (
-            <div className="cardstore">
-              <div className="cardHeader">
-                <div>Under {priceRange[key]}</div>
-                <button>View all</button>
-              </div>
+            <Card
+              headerLeft={`Under ${priceRange[key]}`}
+              headerRight={<button>View all</button>}
+            >
               <div className="underline"></div>
               <div style={{ display: 'flex' }}>
                 {
@@ -65,7 +64,7 @@ const ProductStore = (props) => {
                 }
 
               </div>
-            </div>
+            </Card>
           )
         })
       }

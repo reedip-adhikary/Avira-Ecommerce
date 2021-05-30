@@ -54,7 +54,7 @@ const ProductDetailsPage = (props) => {
             </div>
 
             {/* action buttons */}
-            {/* <div className="flexRow">
+            <div className="flexRow">
               <MaterialButton
                 title="ADD TO CART"
                 bgColor="#ff9f00"
@@ -79,7 +79,7 @@ const ProductDetailsPage = (props) => {
                 }}
                 icon={<AiFillThunderbolt />}
               />
-            </div> */}
+            </div>
           </div>
         </div>
         <div>
@@ -104,7 +104,7 @@ const ProductDetailsPage = (props) => {
             </div>
             <div className="extraOffer">
               Extra <BiRupee />
-              4500 off{" "}
+              450 off{" "}
             </div>
             <div className="flexRow priceContainer">
               <span className="price">
@@ -120,7 +120,7 @@ const ProductDetailsPage = (props) => {
               <p
                 style={{
                   color: "#212121",
-                  fontSize: "14px",
+                  fontSize: "17px",
                   fontWeight: "600",
                 }}
               >
@@ -130,7 +130,7 @@ const ProductDetailsPage = (props) => {
                 <span
                   style={{
                     width: "100px",
-                    fontSize: "12px",
+                    fontSize: "16px",
                     color: "#878787",
                     fontWeight: "600",
                     marginRight: "20px",
@@ -140,7 +140,7 @@ const ProductDetailsPage = (props) => {
                 </span>
                 <span
                   style={{
-                    fontSize: "12px",
+                    fontSize: "16px",
                     color: "#212121",
                   }}
                 >

@@ -60,7 +60,9 @@ const ProductPage = (props) => {
                             key={index}
 
                         >
-                            <img src={`${config.BASE_URL}${product.img}`} alt="" />
+                            <a>
+                                <img src={`${config.BASE_URL}${product.img}`} alt="" />
+                            </a>
                         </Card>
                     )
                 }
