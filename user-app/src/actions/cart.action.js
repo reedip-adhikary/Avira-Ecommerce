@@ -99,11 +99,7 @@ export const removeCartItem = (payload) => {
 export const updateCart = () => {
   return async (dispatch) => {
     const { auth } = store.getState();
-    let cartItems = localStorage.getItem("cart")
-      ? JSON.parse(localStorage.getItem("cart"))
-      : null;
-
-    console.log("upppppppppp");
+    let cartItems = localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : null;
 
     if (auth.authenticate) {
       localStorage.removeItem("cart");

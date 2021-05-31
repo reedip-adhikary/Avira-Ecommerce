@@ -96,6 +96,9 @@
     margin: 0 20px;
     cursor: pointer;
   }
+.fullName {
+    width: 150px;
+  }
 .cart {
     font-weight: bold;
     color: #fff;

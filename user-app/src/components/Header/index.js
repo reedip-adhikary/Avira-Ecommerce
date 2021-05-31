@@ -263,6 +263,11 @@ const Header = (props) => {
                     <div>
                         <a href={`/cart`} className="cart">
                             {/* <Cart count={Object.keys(cart.cartItems).length} /> */}
+                            <IoIosCart
+                                style={{
+                                    color: "#fff",
+                                }}
+                            />
                             <span style={{ margin: "0 10px" }}>Cart</span>
                         </a>
                     </div>
