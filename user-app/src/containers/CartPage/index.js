@@ -96,7 +96,7 @@ const CartPage = (props) => {
               background: "#ffffff",
               justifyContent: "flex-end",
               boxShadow: "0 0 10px 10px #eee",
-              padding: "0px 20px 20px",
+              padding: "0px 20px 10px",
               boxSizing: "border-box",
             }}
           >
