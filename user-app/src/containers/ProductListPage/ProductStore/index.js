@@ -38,7 +38,7 @@ const ProductStore = (props) => {
           return (
             <Card
               headerLeft={`Under ${priceRange[key]}`}
-              headerRight={<button>View all</button>}
+              headerRight={<button className="viewbutton">View all</button>}
             >
               <div className="underline"></div>
               <div style={{ display: 'flex' }}>
@@ -55,7 +55,7 @@ const ProductStore = (props) => {
                       <div className="productInfo">
                         <div>{product.name}</div>
                         <div>
-                          <span>4.3</span>
+                          <span className="rating">4.3</span>
                           <span> (547)</span>
                         </div>
                         <div className="productPrice">{product.price}</div>
