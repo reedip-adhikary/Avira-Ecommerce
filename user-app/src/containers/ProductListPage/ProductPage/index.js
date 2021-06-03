@@ -62,7 +62,7 @@ const ProductPage = (props) => {
                             key={index}
 
                         >
-                            <a>
+                            <a href="">
                                 <img src={`${config.BASE_URL}${product.img}`} alt="" />
                             </a>
                         </Card>

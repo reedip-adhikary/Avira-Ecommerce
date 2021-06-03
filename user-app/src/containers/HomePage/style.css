@@ -1,0 +1,24 @@
+.maincontainer{
+    width: 99%;
+    margin: auto;
+}
+.addcontainer{
+    display: flex;
+}
+
+.add{
+    width: 50%;
+}
+.img1{
+    text-align: left;
+}
+.img2{
+    margin-left: 1%;
+}
+.addimg{
+    width: 99%;
+}
+
+.banner4{
+    width: 100%;
+}
