@@ -14,8 +14,8 @@ const storage = multer.diskStorage({
   },
 });
 
-const accessKeyId = "xxxx";
-const secretAccessKey = "xxxx";
+const accessKeyId = "AKIA3GOLF5HMMEV5ADXY";
+const secretAccessKey = "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";
 
 const s3 = new aws.S3({
   accessKeyId,
@@ -27,7 +27,7 @@ exports.upload = multer({ storage });
 exports.uploadS3 = multer({
   storage: multerS3({
     s3: s3,
-    bucket: "avira-project",
+    bucket: "aviraproject",
     acl: "public-read",
     metadata: function (req, file, cb) {
       cb(null, { fieldName: file.fieldname });
